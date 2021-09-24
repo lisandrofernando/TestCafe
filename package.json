@@ -4,7 +4,9 @@
   "description": "CucumberPractice",
   "main": "index.js",
   "scripts": {
-    "test": "test:ui"
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true —disable-page-caching",
+    "test:chrome:mobile": "tescafe chrome:emulation:device=iphone 11 ./tests"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,11 @@
   "homepage": "https://github.com/lisandrofernando/TestCafe#readme",
   "dependencies": {
     "@cucumber/cucumber": "^7.3.1",
-    "testcafe": "^1.16.0"
+    "gherkin-testcafe": "^5.1.0",
+    "testcafe": "^1.16.0",
+    "testcafe-cucumber-steps": "^1.20.1"
+  },
+  "devDependencies": {
+    "cucumber-testcafe": "^0.1.0"
   }
 }
