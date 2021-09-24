@@ -1,0 +1,23 @@
+{
+  "name": "testcafe_cucumber",
+  "version": "1.0.0",
+  "description": "CucumberPractice",
+  "main": "index.js",
+  "scripts": {
+    "test": "test:ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisandrofernando/TestCafe.git"
+  },
+  "author": "Lisandro Fernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisandrofernando/TestCafe/issues"
+  },
+  "homepage": "https://github.com/lisandrofernando/TestCafe#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "testcafe": "^1.16.0"
+  }
+}
