@@ -2,7 +2,7 @@ import { Selector } from "testcafe";
 
 class ecomerce {
   loginLogo: Selector = Selector(".login_logo");
-  logo: Selector = Selector("span.title").withAttribute('Products');
+  logo: Selector = Selector(".title").withAttribute('Products');
   user: Selector = Selector("#user-name");
   password: Selector = Selector("#password");
   loginButton: Selector = Selector("#login-button");
