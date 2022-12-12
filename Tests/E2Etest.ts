@@ -6,7 +6,7 @@ const url = "https://www.saucedemo.com";
 fixture("Ecomerce Store").page(url);
 
 test("User Lands in Sauce Demo", async (t) => {
-  await t.expect(ecomerce.loginLogo.innerText).contains(" ");
+  await t.expect(ecomerce.loginLogo.innerText).contains("");
   await t.typeText(ecomerce.user,'standard_user');
   await t.typeText(ecomerce.password,'secret_sauce');
 });
