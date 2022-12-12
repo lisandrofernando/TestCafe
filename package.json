@@ -6,7 +6,8 @@
   "scripts": {
     "test:chrome": "testcafe chrome ./tests",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true —disable-page-caching",
-    "test:chrome:mobile": "tescafe chrome:emulation:device=iphone 11 ./tests"
+    "test:chrome:mobile": "tescafe chrome:emulation:device=iphone 11 ./tests",
+    "allure": "allure generate ./allure/allure-results --clean -o ./allure/allure-report && allure open ./allure/allure-report"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "@cucumber/cucumber": "^7.3.1",
     "gherkin-testcafe": "^5.1.0",
     "testcafe": "^1.16.0",
-    "testcafe-cucumber-steps": "^1.20.1"
+    "testcafe-cucumber-steps": "^1.20.1",
+    "testcafe-reporter-allure": "^1.0.5"
   },
   "devDependencies": {
     "cucumber-testcafe": "^0.1.0"
